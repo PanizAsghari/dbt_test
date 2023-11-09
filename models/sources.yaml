@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: source_test
+  - name: TPCDS_SF100TCL
     database: SNOWFLAKE_SAMPLE_DATA
     freshness: # default freshness
       warn_after: {count: 12, period: hour}
