@@ -12,9 +12,9 @@
 
 with source_data as (
 
-    select 1 as id, current_time:time_stamp as loaded_at
+    select 1 as id, current_time:timestamp  as loaded_at
     union all
-    select null as id, current_time:time_stamp as loaded_at
+    select null as id, current_time:timestamp  as loaded_at
 
 )
 
