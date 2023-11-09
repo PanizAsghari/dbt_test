@@ -9,7 +9,6 @@
 
 {{ config(materialized='table' ) }}
 
-use warehouse PC_DBT_WH
 
 with source_data as (
 
