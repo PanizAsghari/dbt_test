@@ -7,14 +7,14 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table' ) }}
+{{ config(materialized='table') }}
 
 
 with source_data as (
 
-    select 1 as id, 2 as new_c
+    select 1 as id, current_timestamp  as loaded_at
     union all
-    select null as id, 2 as new_c
+    select null as id, current_timestamp  as loaded_at
 
 )
 
